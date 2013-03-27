@@ -19,8 +19,8 @@ doc/
 *.swp
 *~
 .project
-#.DS_Store
-#.idea
+.DS_Store
+.idea
 
 #Ignore Gemfile.lock
 /Gemfile.lock
