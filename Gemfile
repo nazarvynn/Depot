@@ -19,6 +19,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'thin'
   gem 'haml-rails'
   gem 'annotate', '2.5.0'
 end
