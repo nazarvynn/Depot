@@ -24,3 +24,5 @@ doc/
 
 #Ignore Gemfile.lock
 /Gemfile.lock
+
+/db/schema.rb

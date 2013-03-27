@@ -1,0 +1,19 @@
+%h1 Listing products
+
+%table.table-striped.table-bordered.table-hover.products
+  - @products.each do |product|
+    %tr
+      %td.list_image= image_tag product.image_url, class: 'img-polaroid'
+      %td.list_description
+        %dl
+          %dt= product.title
+          %dd= truncate(strip_tags(product.description), length: 80)
+      %td.list_actions
+        = link_to 'Show', product, class: 'btn btn-mini icon-star'
+        %br
+        = link_to 'Edit', edit_product_path(product), class: 'btn btn-mini'
+        %br
+        = link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-mini btn-danger'
+%br
+
+= link_to 'New Product', new_product_path

@@ -1,0 +1,23 @@
+
+@import "bootstrap";
+
+.products {
+	.list_image {
+		padding: 20px;
+	}
+
+	.btn {
+		width: 50px;
+		margin: 5px 0;
+	}
+	
+	dt {
+		margin-left: 10px;
+	}
+
+	.list_actions {
+		width: 100px;
+		padding-right: 10px;
+		text-align: right
+	}
+}
